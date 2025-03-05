@@ -66,6 +66,7 @@ if __name__ == "__main__":
                         utils.sleep_queue(manager)
 
                         print(i)
+
                         manager.actual_lot = i
 
                         utils.check_and_get_prices(manager)
