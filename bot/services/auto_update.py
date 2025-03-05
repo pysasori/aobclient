@@ -8,7 +8,7 @@ def update():
         if pull_latest_code():
             restart_program()
     except:
-        pass
+        print(problem)
 
 
 def pull_latest_code():
