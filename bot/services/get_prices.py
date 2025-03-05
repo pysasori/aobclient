@@ -18,6 +18,13 @@ def get_prices(manager: Manager) -> [int, int]:
             manager.start_cord[1] + pull_out_menu[1]
         )
 
+    manager.search_image(
+        f'templates_img/silver_coin.bmp',
+        cords=[manager.start_cord[0], manager.start_cord[1], config.LEN_WINDOW[0], config.LEN_WINDOW[1] / 2]
+
+    )
+    time.sleep(0.08)
+
     sell_price = manager.scan_prices([
         manager.start_cord[0] + config.SELL_ORDER_PRICE[0],
         manager.start_cord[1] + config.SELL_ORDER_PRICE[1],

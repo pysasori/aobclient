@@ -35,11 +35,11 @@ def check_and_get_prices(manager: Manager) -> None:
         manager.start_cord[1] + manager.buy_order_cord[1]
     )
 
-    manager.search_image(
-        f'templates_img/silver_coin.bmp',
-        cords=[manager.start_cord[0], manager.start_cord[1], config.LEN_WINDOW[0], config.LEN_WINDOW[1] / 2]
-
-    )
+    # manager.search_image(
+    #     f'templates_img/silver_coin.bmp',
+    #     cords=[manager.start_cord[0], manager.start_cord[1], config.LEN_WINDOW[0], config.LEN_WINDOW[1] / 2]
+    #
+    # )
 
     manager.sell_price, manager.buy_price = services.get_prices(manager)
 
