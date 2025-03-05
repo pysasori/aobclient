@@ -12,7 +12,7 @@ if __name__ == "__main__":
         manager = Manager()
         try:
             # Авто оновлення с гіта,
-            services.update_git()
+            services.update()
 
             # Оновлення продавця
             utils.update_seller_data(manager)

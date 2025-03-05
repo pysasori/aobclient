@@ -16,3 +16,4 @@ from .send_problem_on_server import send_problem_on_server
 from .kill_process_by_window_name import kill_process_by_window_name
 from .get_amount_money import get_amount_money
 from .send_money_on_server import send_money_on_server
+from .auto_update import update
