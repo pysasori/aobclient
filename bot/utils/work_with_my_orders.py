@@ -24,7 +24,7 @@ def work_with_my_orders(manager: Manager) -> None:
     if profit < manager.actual_lot['min_profit']:
         services.close_buy_orders(manager)
         return
-
+    time.sleep(0.4)
     amount_sell_orders = services.get_amount_sell_orders(manager)
 
     effortless.random_delay(0.3, 0.4)
