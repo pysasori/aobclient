@@ -62,20 +62,20 @@ def order_menu_sell_order(manager: Manager) -> None:
 
 def order_menu_sell_order_without_sell_price(manager: Manager, buy_price) -> None:
     manager.mouse_controller.move_and_click(
-        manager.start_cord[0] + config.ORDER_CREATE_SELL_ORDER_CHECKPOINT[0],
-        manager.start_cord[1] + config.ORDER_CREATE_SELL_ORDER_CHECKPOINT[1]
+        manager.start_cord[0] + config.ORDER_SELL_CHECKPOINT[0],
+        manager.start_cord[1] + config.ORDER_SELL_CHECKPOINT[1]
     )
-    effortless.random_delay(0.1, 0.15)
-    manager.mouse_controller.move_and_click(
-        manager.start_cord[0] + config.ORDER_PRICE_INPUT[0],
-        manager.start_cord[1] + config.ORDER_PRICE_INPUT[1]
-    )
-    effortless.random_delay(0.1, 0.15)
-
-    pyperclip.copy(buy_price * 1.23)
-    effortless.random_delay(0.2, 0.3)
-    keyboard.press_and_release('ctrl + v')
-    effortless.random_delay(0.1, 0.15)
+    # effortless.random_delay(0.1, 0.15)
+    # manager.mouse_controller.move_and_click(
+    #     manager.start_cord[0] + config.ORDER_PRICE_INPUT[0],
+    #     manager.start_cord[1] + config.ORDER_PRICE_INPUT[1]
+    # )
+    # effortless.random_delay(0.1, 0.15)
+    #
+    # pyperclip.copy(buy_price * 1.23)
+    # effortless.random_delay(0.2, 0.3)
+    # keyboard.press_and_release('ctrl + v')
+    # effortless.random_delay(0.1, 0.15)
     manager.mouse_controller.move_and_click(
         manager.start_cord[0] + config.ORDER_DTN_CREATE[0],
         manager.start_cord[1] + config.ORDER_DTN_CREATE[1]
